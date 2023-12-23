@@ -1,0 +1,24 @@
+{
+  "name": "madklub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf node_modules build",
+    "start": "snowpack dev",
+    "build": "tsc && snowpack build",
+    "scp": "snowpack build && scp -r build/* frma@foadell:/home/frma/www_root/public/madklub/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fmma-npm/http-client": "^1.4.2",
+    "@fmma-npm/wc-table": "^0.3.1",
+    "@snowpack/plugin-typescript": "^1.2.1",
+    "http2-proxy": "^5.0.53",
+    "lit": "^2.4.1",
+    "patch-package": "^6.5.0",
+    "snowpack": "^3.8.8"
+  }
+}
